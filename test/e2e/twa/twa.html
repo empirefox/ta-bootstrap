@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="protractorApp" lang="zh_CN">
+<html ng-app="protractorApp">
 	<head>
 		{% for url in css %}
 		<link rel="stylesheet" href="/[[url]]" />
@@ -11,11 +11,11 @@
 		<script src="/[[url]]"></script>
 		{% endfor %}
 	</head>
-	<body>
-		Check me to check both:
-		<input type="checkbox" ng-model="master">
-		<br/>
-		<input id="checkSlave" type="checkbox" ng-checked="master">
+	<body ng-controller="Ctrl">
+		<div text-angular ta-toolbar="[ ['twa','html'],['h1','h2','h3'],['bold','italics'] ]" ng-model="htmlVariable"></div>
+		<hr/>
+		<div ta-bind="text" ng-model="htmlVariable"></div>
+		<script src="/app.js"></script>
 		<script src="[[mainjs]]"></script>
 	</body>
 <html>

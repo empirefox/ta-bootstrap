@@ -1,0 +1,30 @@
+{
+    "marker": "eyJjIjowLCJrIjoiMDAwMDAwQ0MuRENNIn0=",
+    "items": [
+        {
+            "key": "img1.png",
+            "hash": "FhSEKlNHeuI1w89AvZMP4ZtlijrO",
+            "fsize": 208472,
+            "mimeType": "image/png",
+            "putTime": 13993417254549955
+        }, {
+            "key": "img2.png",
+            "hash": "FtEIQ24V4Dbx9PVrgK-6S1R3zvbn",
+            "fsize": 209004,
+            "mimeType": "image/png",
+            "putTime": 13993417256200466
+        }, {
+            "key": "img3.png",
+            "hash": "FsfU5MxvxQxhvxts1KBBbZYPwhui",
+            "fsize": 210170,
+            "mimeType": "image/png",
+            "putTime": 13993417258134446
+        }, {
+            "key": "img4.png",
+            "hash": "FjLnLfzKyNpPHAWcjhRLnwEj-1EP",
+            "fsize": 209276,
+            "mimeType": "image/png",
+            "putTime": 13993417259836335
+        }
+    ]
+}

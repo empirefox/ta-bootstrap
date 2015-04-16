@@ -1,0 +1,47 @@
+<div class="modal-header">
+	<button ng-click="cancel()" type="button" class="close" data-dismiss="modal" aria-hidden="true">
+		&times;
+	</button>
+	<h4 class="modal-title" ng-bind="'TA_TWA_INSERT'|translate"></h4>
+</div>
+<div twa-picker class="modal-body">
+	<div class="row">
+		<div class="col-lg-7">
+			<div class="btn-group">
+				<button ng-repeat="size in sizes" type="button" class="btn btn-default"
+				ng-model="icon.size"
+				btn-radio="size.value">
+					<span ng-bind="size.text|translate"></span>
+				</button>
+			</div>
+		</div>
+		<div class="col-lg-5">
+			<div class="well" style="text-align:center;padding:8px;">
+				<i class="twa" ng-class="[icon.size, icon.name]"> </i>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<tabset justified="true">
+			<tab ng-repeat="category in twas|toArray" heading="{{category.$key|translate}}">
+				<tabset type="pills">
+					<tab ng-repeat="group in category|toArray" heading="{{(category.$key+'_'+group.$key)|translate}}">
+						<ul class="twa-icons">
+							<li ng-repeat="twa in group" ng-click="icon.name=twa" ng-dblclick="icon.name=twa;ok()">
+								<i ng-class="twa" class="twa"> </i>
+							</li>
+						</ul>
+					</tab>
+				</tabset>
+			</tab>
+		</tabset>
+	</div>
+</div>
+<div class="modal-footer">
+	<button type="button" class="btn btn-primary" ng-click="ok()" ng-disabled="!icon.name">
+		<span ng-bind="'TA_TWA_OK'|translate"></span>
+	</button>
+	<button type="button" class="btn btn-primary" ng-click="cancel()">
+		<span ng-bind="'TA_TWA_CANCEL'|translate"></span>
+	</button>
+</div>

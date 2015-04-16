@@ -1,0 +1,79 @@
+<div class="modal-header">
+	<button ng-click="cancel()" type="button" class="close" data-dismiss="modal" aria-hidden="true">
+		&times;
+	</button>
+	<h5 class="modal-title" ng-bind="'TA_BTN_INSERT'|translate"></h5>
+</div>
+<div class="modal-body">
+	<div class="row">
+		<div class="col-lg-12">
+			<h5 ng-bind="'TA_BTN_TYPE'|translate"></h5>
+			<div>
+				<button ng-repeat="type in types" type="button" class="btn btn-default"
+				ng-class="type.name"
+				ng-model="btn.type"
+				btn-radio="type">
+					<span ng-bind="type.text|translate"></span>
+				</button>
+			</div>
+		</div>
+		<div class="col-lg-7">
+			<h5 ng-bind="'TA_BTN_SIZE'|translate"></h5>
+			<div>
+				<button ng-repeat="size in sizes" type="button" class="btn btn-default" style="vertical-align: bottom;"
+				ng-class="size.name"
+				ng-model="btn.size"
+				btn-radio="size">
+					<span ng-bind="size.text|translate"></span>
+				</button>
+			</div>
+		</div>
+		<div class="col-lg-5">
+			<h5 ng-bind="'TA_BTN_SPECIAL_ATTRS'|translate"></h5>
+			<div class="btn-group">
+				<button type="button" class="btn btn-default"
+				ng-model="btn.block"
+				btn-checkbox
+				btn-checkbox-true="'btn-block'">
+					<span ng-bind="'TA_BTN_BLOCK'|translate"></span>
+				</button>
+				<button type="button" class="btn btn-default"
+				ng-model="btn.target"
+				btn-checkbox>
+					<span ng-bind="'TA_BTN_OPEN_IN_NEW_WINDOW'|translate"></span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-7">
+			<h5 ng-bind="'TA_BTN_ATTR'|translate"></h5>
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-link"></i></span>
+				<input type="text" class="form-control" ng-model="btn.url" placeholder="http://">
+			</div>
+			<br/>
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-pencil fa-flip-horizontal"></i></span>
+				<input type="text" class="form-control" ng-model="btn.text">
+			</div>
+		</div>
+		<div class="col-lg-5">
+			<h5 ng-bind="'TA_BTN_PREVIEW'|translate"></h5>
+			<div class="well text-center">
+				<a name="btn" class="btn"
+				ng-class="[btn.type.name, btn.size.name, btn.block]"
+				ng-href="{{btn.url}}"
+				target="{{btn.target}}"> <span ng-bind="btn.text||(btn.type.text|translate)"></span></a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal-footer">
+	<button type="button" class="btn btn-primary" ng-click="ok('btn')">
+		<span ng-bind="'TA_BTN_OK'|translate"></span>
+	</button>
+	<button type="button" class="btn btn-primary" ng-click="cancel()">
+		<span ng-bind="'TA_BTN_CANCEL'|translate"></span>
+	</button>
+</div>

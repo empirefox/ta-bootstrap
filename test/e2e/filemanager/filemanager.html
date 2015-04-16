@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app="protractorApp">
+	<head>
+		{% for url in css %}
+		<link rel="stylesheet" href="/[[url]]" />
+		{% endfor %}
+
+		<link rel="stylesheet" href="/app.css" />
+
+		{% for url in js %}
+		<script src="/[[url]]"></script>
+		{% endfor %}
+	</head>
+	<body ng-controller="Ctrl">
+		<button type="button" ng-click="openFm('qiniu')">
+			Open File Manager(qiniu)
+		</button>
+        <button type="button" ng-click="openFm('tudou')">
+            Open File Manager(tudou)
+        </button>
+        <button type="button" ng-click="openFm('youku')">
+            Open File Manager(youku)
+        </button>
+		<script src="/app.js"></script>
+		<script src="[[mainjs]]"></script>
+		<div class="row">
+			<iframe
+			ng-src="{{tudousrc}}"
+			allowtransparency="true"
+			allowfullscreen="true"
+			scrolling="no" border="0" frameborder="0" style="width:240px;height:180px;"></iframe>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<iframe
+				src="http://www.tudou.com/programs/view/html5embed.action?code=PEq07Nfr5bY"
+				scrolling="no" border="0" frameborder="0" style="width:300px;height:250px;"></iframe>
+			</div>
+			<div class="col-md-6">
+				<iframe
+				src="http://www.tudou.com/programs/view/html5embed.action?code=PEq07Nfr5bY"
+				scrolling="no" border="0" frameborder="0" style="width:300px;height:250px;"></iframe>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<iframe
+				src="http://www.tudou.com/programs/view/html5embed.action?code=PEq07Nfr5bY"
+				scrolling="no" border="0" frameborder="0" style="width:300px;height:250px;"></iframe>
+			</div>
+			<div class="col-md-6">
+				<iframe
+				src="http://www.tudou.com/programs/view/html5embed.action?code=PEq07Nfr5bY"
+				scrolling="no" border="0" frameborder="0" style="width:300px;height:250px;"></iframe>
+			</div>
+			<div class="col-md-6">
+				<iframe height=498 width=510 src="http://player.youku.com/embed/XNTgzMTU5MzQ4" frameborder=0 allowfullscreen></iframe>
+			</div>
+		</div>
+	</body>
+<html>

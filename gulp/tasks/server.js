@@ -3,30 +3,7 @@ var plugins = require('gulp-load-plugins')();
 var swig = require('swig');
 var express = require('express');
 var config = require('../config');
-var Lazy = require("lazy.js");
 var resource = require('../resource.json');
-var helper = require('../helper');
-
-function indexHandler(req, res, next) {
-	gulp.src(config['index.html'].src)
-	// inject css files to html
-	.pipe(plugins.inject(gulp.src(resource.css, {
-		read : false
-	}), {
-		name : 'head'
-	}))
-	// inject js files to html
-	.pipe(plugins.inject(gulp.src(resource.js, {
-		read : false
-	}), {
-		name : 'head'
-	}))
-	// output
-	.once('data', function(file) {
-		res.write(file.contents);
-		res.end();
-	});
-};
 
 function scenarioHandler(req, res) {
 	var scenario = req.params.scenario,
@@ -37,20 +14,40 @@ function scenarioHandler(req, res) {
 	});
 };
 
+function mockHandler(vendor) {
+	return function(req, res) {
+		var act = req.params.act;
+		res.setHeader('Content-Type', 'application/json');
+		res.render('filemanager/' + vendor + '/' + act + '.json');
+	};
+}
+
+function deleteOkMockHandler(req, res) {
+	res.setHeader('Content-Type', 'application/json');
+	res.send({
+		status : 'ok'
+	});
+}
+
 gulp.task('server', function(done) {
 	var app = express();
 
-	app.engine('html', new swig.Swig({
+	var $swig = new swig.Swig({
 		cache : false,
-		varControls : ['[[', ']]']
-	}).renderFile);
+		varControls : ['[[', ']]'],
+		locals : resource
+	}).renderFile;
+	app.engine('json', $swig);
+	app.engine('html', $swig);
 	app.set('view engine', 'html');
 	app.set('views', config.render('{{ test }}/e2e'));
 	app.set('view cache', false);
 
-	app.get('/', indexHandler);
-	app.get('/index.html', indexHandler);
 	app.get('/scenario/:scenario/:view?/:js?', scenarioHandler);
+	'qiniu|tudou|youku'.split('|').forEach(function(vendor) {
+		app.get('/' + vendor + '/:act', mockHandler(vendor));
+	});
+	app.delete('/:vendor/:act', deleteOkMockHandler);
 
 	app.use(express.static(config.dest, {
 		index : false

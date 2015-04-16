@@ -1,0 +1,43 @@
+[
+    {
+        "id": "XMjg1MTcyNDQ0",
+        "title": "泡芙小姐的灯泡 11",
+        "link": "http://v.youku.com/v_show/id_XMjg1MTcyNDQ0.html",
+        "thumbnail": "http://g2.ykimg.com/01270F1F46509251F539D10123193CD2CB70CC-5896-F53E-B869-61E819861E71",
+        "duration": "910",
+        "category": "原创",
+        "state": "normal",
+        "published": "2011-07-15 09:00:42",
+        "description": "当一个人在一座城市搬11次家。就意味着准备在这个城市买房了。",
+        "player": "http://player.youku.com/player.php/sid/XMjg1MTcyNDQ0/v.swf",
+        "public_type": "all",
+        "copyright_type": "original",
+        "user": {
+            "id": 58921428,
+            "name": "泡芙小姐",
+            "link": "http://u.youku.com/user_show/id_UMjM1Njg1NzEy.html"
+        },
+        "operation_limit": ["COMMENT_DISABLED"],
+        "streamtypes": ["flv", "flvhd", "hd"]
+    }, {
+        "id": "XMjg1MTcyNDQ0",
+        "title": "泡芙小姐的灯泡 11",
+        "link": "http://v.youku.com/v_show/id_XMjg1MTcyNDQ0.html",
+        "thumbnail": "http://g2.ykimg.com/01270F1F46509251F539D10123193CD2CB70CC-5896-F53E-B869-61E819861E71",
+        "duration": "910",
+        "category": "原创",
+        "state": "normal",
+        "published": "2011-07-15 09:00:42",
+        "description": "当一个人在一座城市搬11次家。就意味着准备在这个城市买房了。",
+        "player": "http://player.youku.com/player.php/sid/XMjg1MTcyNDQ0/v.swf",
+        "public_type": "all",
+        "copyright_type": "original",
+        "user": {
+            "id": 58921428,
+            "name": "泡芙小姐",
+            "link": "http://u.youku.com/user_show/id_UMjM1Njg1NzEy.html"
+        },
+        "operation_limit": ["COMMENT_DISABLED"],
+        "streamtypes": ["flv", "flvhd", "hd"]
+    }
+]

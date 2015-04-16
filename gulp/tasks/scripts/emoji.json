@@ -1,0 +1,37 @@
+{
+	"EMOJI_PEOPLE": {
+		"FACES": "😄\n😃\n😀\n😊\n☺\n😉\n😍\n😘\n😚\n😗\n😙\n😜\n😝\n😛\n😳\n😁\n😔\n😌\n😒\n😞\n😣\n😢\n😂\n😭\n😪\n😥\n😰\n😅\n😓\n😩\n😫\n😨\n😱\n😠\n😡\n😤\n😖\n😆\n😋\n😷\n😎\n😴\n😵\n😲\n😟\n😦\n😧\n😈\n👿\n😮\n😬\n😐\n😕\n😯\n😶\n😇\n😏\n😑\n👲\n👳\n👮\n👷\n💂\n👶\n👦\n👧\n👨\n👩\n👴\n👵\n👱\n👼\n👸",
+		"CAT_FACES": "😺\n😸\n😻\n😽\n😼\n🙀\n😿\n😹\n😾",
+		"OTHER_FACES": "👹\n👺\n🙈\n🙉\n🙊\n💀\n👽\n💩",
+		"MISC": "🔥\n✨\n🌟\n💫\n💥\n💢\n💦\n💧\n💤\n💨\n👂\n👀\n👃\n👅\n👄\n👍\n👎\n👌\n👊\n✊\n✌\n👋\n✋\n👐\n👆\n👇\n👉\n👈\n🙌\n🙏\n☝\n👏\n💪\n🚶\n🏃\n💃\n👫\n👪\n👬\n👭\n💏\n💑\n👯\n🙆\n🙅\n💁\n🙋\n💆\n💇\n💅\n👰\n🙎\n🙍\n🙇",
+		"CLOTHES_AND_ACCESSORIES": "🎩\n👑\n👒\n👟\n👞\n👡\n👠\n👢\n👕\n👔\n👚\n👗\n🎽\n👖\n👘\n👙\n💼\n👜\n👝\n👛\n👓\n🎀\n🌂\n💄",
+		"HEARTS": "💛\n💙\n💜\n💚\n❤\n💔\n💗\n💓\n💕\n💖\n💞\n💘\n💌\n💋\n💍\n💎\n👤\n👥\n💬\n👣\n💭"
+	},
+	"EMOJI_NATURE": {
+		"ANIMALS": "🐶\n🐺\n🐱\n🐭\n🐹\n🐰\n🐸\n🐯\n🐨\n🐻\n🐷\n🐽\n🐮\n🐗\n🐵\n🐒\n🐴\n🐑\n🐘\n🐼\n🐧\n🐦\n🐤\n🐥\n🐣\n🐔\n🐍\n🐢\n🐛\n🐝\n🐜\n🐞\n🐌\n🐙\n🐚\n🐠\n🐟\n🐬\n🐳\n🐋\n🐄\n🐏\n🐀\n🐃\n🐅\n🐇\n🐉\n🐎\n🐐\n🐓\n🐕\n🐖\n🐁\n🐂\n🐲\n🐡\n🐊\n🐫\n🐪\n🐆\n🐈\n🐩\n🐾",
+		"PLANTS_AND_FLOWERS": "💐\n🌸\n🌷\n🍀\n🌹\n🌻\n🌺\n🍁\n🍃\n🍂\n🌿\n🌾\n🍄\n🌵\n🌴\n🌲\n🌳\n🌰\n🌱\n🌼",
+		"SCIENCE_AND_WEATHER": "🌐\n🌞\n🌝\n🌚\n🌑\n🌒\n🌓\n🌔\n🌕\n🌖\n🌗\n🌘\n🌜\n🌛\n🌙\n🌍\n🌎\n🌏\n🌋\n🌌\n🌠\n⭐\n☀\n⛅\n☁\n⚡\n☔\n❄\n⛄\n🌀\n🌁\n🌈\n🌊"
+	},
+	"EMOJI_OBJECTS": {
+		"TOYS_TOOLS_AND_TECHNOLOGY": "🎍\n💝\n🎎\n🎒\n🎓\n🎏\n🎆\n🎇\n🎐\n🎑\n🎃\n👻\n🎅\n🎄\n🎁\n🎋\n🎉\n🎊\n🎈\n🎌\n🔮\n🎥\n📷\n📹\n📼\n💿\n📀\n💽\n💾\n💻\n📱\n☎\n📞\n📟\n📠\n📡\n📺\n📻\n🔊\n🔉\n🔈\n🔇\n🔔\n🔕\n📢\n📣\n⏳\n⌛\n⏰\n⌚\n🔓\n🔒\n🔏\n🔐\n🔑\n🔎\n💡\n🔦\n🔆\n🔅\n🔌\n🔋\n🔍\n🛁\n🛀\n🚿\n🚽\n🔧\n🔩\n🔨\n🚪\n🚬\n💣\n🔫\n🔪\n💊\n💉\n💰\n💴\n💵\n💷\n💶\n💳\n💸\n📲",
+		"BOOKS_ENVELOPES_AND_STATIONERY": "📧\n📥\n📤\n✉\n📩\n📨\n📯\n📫\n📪\n📬\n📭\n📮\n📦\n📝\n📄\n📃\n📑\n📊\n📈\n📉\n📜\n📋\n📅\n📆\n📇\n📁\n📂\n✂\n📌\n📎\n✒\n✏\n📏\n📐\n📕\n📗\n📘\n📙\n📓\n📔\n📒\n📚\n📖\n🔖\n📛\n🔬\n🔭\n📰",
+		"MUSIC_AND_ARTS": "🎨\n🎬\n🎤\n🎧\n🎼\n🎵\n🎶\n🎹\n🎻\n🎺\n🎷\n🎸",
+		"SPORTS_AND_GAMES": "👾\n🎮\n🃏\n🎴\n🀄\n🎲\n🎯\n🏈\n🏀\n⚽\n⚾\n🎾\n🎱\n🏉\n🎳\n⛳\n🚵\n🚴\n🏁\n🏇\n🏆\n🎿\n🏂\n🏊\n🏄\n🎣",
+		"FOOD_AND_DRINK": "☕\n🍵\n🍶\n🍼\n🍺\n🍻\n🍸\n🍹\n🍷\n🍴\n🍕\n🍔\n🍟\n🍗\n🍖\n🍝\n🍛\n🍤\n🍱\n🍣\n🍥\n🍙\n🍘\n🍚\n🍜\n🍲\n🍢\n🍡\n🍳\n🍞\n🍩\n🍮\n🍦\n🍨\n🍧\n🎂\n🍰\n🍪\n🍫\n🍬\n🍭\n🍯",
+		"FRUIT_AND_VEGETABLES": "🍎\n🍏\n🍊\n🍋\n🍒\n🍇\n🍉\n🍓\n🍑\n🍈\n🍌\n🍐\n🍍\n🍠\n🍆\n🍅\n🌽"
+	},
+	"EMOJI_PLACES": {
+		"BUILDINGS_LOCATIONS_AND_LANDMARKS": "🏠\n🏡\n🏫\n🏢\n🏣\n🏥\n🏦\n🏪\n🏩\n🏨\n💒\n⛪\n🏬\n🏤\n🌇\n🌆\n🏯\n🏰\n⛺\n🏭\n🗼\n🗾\n🗻\n🌄\n🌅\n🌃\n🗽\n🌉\n🎠\n🎡\n⛲\n🎢\n🚢",
+		"TRANSPORT": "⛵\n🚤\n🚣\n⚓\n🚀\n✈\n💺\n🚁\n🚂\n🚊\n🚉\n🚞\n🚆\n🚄\n🚅\n🚈\n🚇\n🚝\n🚋\n🚃\n🚎\n🚌\n🚍\n🚙\n🚘\n🚗\n🚕\n🚖\n🚛\n🚚\n🚨\n🚓\n🚔\n🚒\n🚑\n🚐\n🚲\n🚡\n🚟\n🚠\n🚜\n💈\n🚏\n🎫\n🚦\n🚥\n⚠\n🚧\n🔰\n⛽\n🏮\n🎰\n♨\n🗿\n🎪\n🎭\n📍\n🚩",
+		"FLAGS": "🇯🇵\n🇰🇷\n🇩🇪\n🇨🇳\n🇺🇸\n🇫🇷\n🇪🇸\n🇮🇹\n🇷🇺\n🇬🇧"
+	},
+	"EMOJI_SYMBOLS": {
+		"NUMBERS_AND_ARROWS": "1⃣\n2⃣\n3⃣\n4⃣\n5⃣\n6⃣\n7⃣\n8⃣\n9⃣\n0⃣\n🔟\n🔢\n#⃣\n🔣\n⬆\n⬇\n⬅\n➡\n🔠\n🔡\n🔤\n↗\n↖\n↘\n↙\n↔\n↕\n🔄\n◀\n▶\n🔼\n🔽\n↩\n↪\nℹ\n⏪\n⏩\n⏫\n⏬\n⤵\n⤴",
+		"TEXT_AND_LABELS": "🆗\n🔀\n🔁\n🔂\n🆕\n🆙\n🆒\n🆓\n🆖\n📶\n🎦\n🈁\n🈯\n🈳\n🈵\n🈴\n🈲\n🉐\n🈹\n🈺\n🈶\n🈚\n🚻\n🚹\n🚺\n🚼\n🚾\n🚰\n🚮\n🅿\n♿\n🚭\n🈷\n🈸\n🈂\nⓂ\n🛂\n🛄\n🛅\n🛃\n🉑\n㊙\n㊗\n🆑\n🆘\n🆔\n🚫\n🔞\n📵\n🚯\n🚱\n🚳\n🚷\n🚸\n⛔\n✳\n❇\n❎\n✅\n✴\n💟\n🆚\n📳\n📴\n🅰\n🅱\n🆎\n🅾\n💠\n➿\n♻",
+		"ASTROLOGICAL_ZODIAC_SIGNS": "♈\n♉\n♊\n♋\n♌\n♍\n♎\n♏\n♐\n♑\n♒\n♓\n⛎",
+		"OTHER_SYMBOLS_AND_CHARACTERS": "🔯\n🏧\n💹\n💲\n💱\n©\n®\n™\n❌\n‼\n⁉\n❗\n❓\n❕\n❔\n⭕\n🔝\n🔚\n🔙\n🔛\n🔜\n🔃\n🕛\n🕧\n🕐\n🕜\n🕑\n🕝\n🕒\n🕞\n🕓\n🕟\n🕔\n🕠\n🕕\n🕖\n🕗\n🕘\n🕙\n🕚\n🕡\n🕢\n🕣\n🕤\n🕥\n🕦\n✖\n➕\n➖\n➗\n♠\n♥\n♣\n♦\n💮\n💯\n✔\n☑\n🔘\n🔗\n➰\n〰\n〽\n🔱\n◼\n◻\n◾\n◽\n▪\n▫\n🔺\n🔲\n🔳\n⚫\n⚪\n🔴\n🔵\n🔻\n⬜\n⬛\n🔶\n🔷\n🔸\n🔹"
+	},
+	"EMOJI_NEW": {
+		"UNICODE_7.0_EMOJI_ADDITIONS": "🌡\n🌢\n🌣\n🌤\n🌥\n🌦\n🌧\n🌨\n🌩\n🌪\n🌫\n🌬\n🌶\n🍽\n🎔\n🎕\n🎖\n🎗\n🎘\n🎙\n🎚\n🎛\n🎜\n🎝\n🎞\n🎟\n🏅\n🏋\n🏌\n🏍\n🏎\n🏔\n🏕\n🏖\n🏗\n🏘\n🏙\n🏚\n🏛\n🏜\n🏝\n🏞\n🏟\n🏱\n🏲\n🏳\n🏴\n🏵\n🏶\n🏷\n🐿\n👁\n📸\n📽\n📾\n🔾\n🔿\n🕄\n🕅\n🕆\n🕇\n🕈\n🕉\n🕊\n🕨\n🕩\n🕪\n🕫\n🕬\n🕭\n🕮\n🕯\n🕰\n🕱\n🕲\n🕳\n🕴\n🕵\n🕶\n🕷\n🕸\n🕹\n🕻\n🕼\n🕽\n🕾\n🕿\n🖀\n🖁\n🖂\n🖃\n🖄\n🖅\n🖆\n🖇\n🖈\n🖉\n🖊\n🖋\n🖌\n🖍\n🖎\n🖏\n🖐\n🖑\n🖒\n🖓\n🖔\n🖕\n🖖\n🖗\n🖘\n🖙\n🖚\n🖛\n🖜\n🖝\n🖞\n🖟\n🖠\n🖡\n🖢\n🖣\n🖥\n🖦\n🖧\n🖨\n🖩\n🖪\n🖫\n🖬\n🖭\n🖮\n🖯\n🖰\n🖱\n🖲\n🖳\n🖴\n🖵\n🖶\n🖷\n🖸\n🖹\n🖺\n🖻\n🖼\n🖽\n🖾\n🖿\n🗀\n🗀\n🗂\n🗃\n🗄\n🗅\n🗆\n🗇\n🗈\n🗉\n🗊\n🗋\n🗌\n🗍\n🗎\n🗏\n🗐\n🗑\n🗒\n🗓\n🗔\n🗕\n🗖\n🗗\n🗘\n🗙\n🗚\n🗛\n🗜\n🗝\n🗞\n🗟\n🗠\n🗡\n🗢\n🗣\n🗤\n🗥\n🗦\n🗧\n🗨\n🗩\n🗪\n🗫\n🗬\n🗭\n🗯\n🗯\n🗰\n🗱\n🗲\n🗳\n🗴\n🗵\n🗶\n🗷\n🗸\n🗹\n🗺\n🙁\n🙂\n🛆\n🛇\n🛈\n🛉\n🛊\n🛋\n🛌\n🛍\n🛎\n🛏\n🛠\n🛡\n🛢\n🛣\n🛤\n🛥\n🛦\n🛧\n🛨\n🛩\n🛪\n🛫\n🛬\n🛰\n🛱\n🛲\n🛳"
+	}
+}

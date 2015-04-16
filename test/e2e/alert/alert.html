@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="protractorApp">
+	<head>
+		{% for url in css %}
+		<link rel="stylesheet" href="/[[url]]" />
+		{% endfor %}
+
+		<link rel="stylesheet" href="/app.css" />
+
+		{% for url in js %}
+		<script src="/[[url]]"></script>
+		{% endfor %}
+	</head>
+	<body ng-controller="Ctrl">
+		<div text-angular ta-toolbar="[ ['alert'],['h1','h2','h3'],['bold','html'],['justifyLeft','justifyCenter','justifyRight','justify'] ]" ng-model="htmlVariable"></div>
+		<hr/>
+		<div ta-bind="text" ng-model="htmlVariable"></div>
+		<script src="/app.js"></script>
+		<script src="[[mainjs]]"></script>
+	</body>
+<html>

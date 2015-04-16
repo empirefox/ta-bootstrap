@@ -1,1 +1,1 @@
-angular.module('protractorApp', [])
+angular.module('protractorApp', []);

@@ -1,0 +1,59 @@
+<nav class="navbar navbar-default" role="navigation" style="border-radius: 0px;">
+	<div class="navbar-header">
+		<p class="navbar-text" ng-bind="view.title|translate"></p>
+	</div>
+	<button type="button" class="btn btn-link navbar-btn navbar-left"
+	ng-if="current.getParent" ng-click="$parent.current=current.getParent()">
+		<i class="fa fa-lg fa-chevron-circle-up"></i>
+	</button>
+	<p class="navbar-text navbar-left" ng-bind="current.dir" style="margin-left: 0px;"></p>
+	<form class="navbar-form navbar-right" role="search">
+		<div class="form-group">
+			<select class="form-control" ng-model="view.show" ng-options="show.name as (show.text|translate) for show in ops.shows"></select>
+		</div>
+		<div class="form-group">
+			<select class="form-control" ng-model="view.sort" ng-options="sort.name as (sort.text|translate) for sort in ops.sorts"></select>
+		</div>
+		<button type="button" class="btn btn-default" ng-model="view.reverse" btn-checkbox>
+			<span ng-bind="'TA_FM_SORT_REVERSE'|translate"></span>
+		</button>
+	</form>
+</nav>
+<div class="modal-body">
+	<div class="row">
+		<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2"
+		ng-repeat="item in current.items">
+
+			<button ng-if="item.delete" type="button" class="close close-btn" ng-click="item.delete()">
+				<i class="fa fa-trash"></i>
+			</button>
+			<a href="#" class="thumbnail text-center"
+			ng-click="onClick(item)"> <img ng-src="{{item.imgSrc}}"> <span ng-bind="item.name"></span> </a>
+
+		</div>
+	</div>
+</div>
+<div class="modal-footer">
+	<form name="webUrlForm" class="form-inline" role="form">
+		<div class="form-group">
+			<label class="control-label" ng-bind="webUrl.vendor"></label>
+			<div class="input-group">
+				<span class="input-group-btn">
+					<button class="btn btn-default" type="button" ng-click="type=(type+1)%ops.types.length">
+						<span ng-bind="ops.types[type].text|translate"></span>
+					</button> </span>
+				<input type="url" class="form-control"
+				ng-model-options="{ updateOn: 'default blur', debounce: {'default': 500, 'blur': 0} }"
+				ng-model="webUrl.url"
+				ng-change="transform()"
+				required>
+			</div>
+		</div>
+		<button type="button" class="btn btn-primary" ng-click="insertUrl()" ng-disabled="!webUrlForm.$valid">
+			<span ng-bind="'TA_FM_OK'|translate"></span>
+		</button>
+		<button type="button" class="btn btn-primary" ng-click="cancel()">
+			<span ng-bind="'TA_FM_CANCEL'|translate"></span>
+		</button>
+	</form>
+</div>

@@ -1,0 +1,113 @@
+<div class="modal-header">
+	<button ng-click="cancel()" type="button" class="close" data-dismiss="modal" aria-hidden="true">
+		&times;
+	</button>
+	<h4 class="modal-title" ng-bind="'TA_FA_INSERT'|translate" ng-class="current.tittleType"></h4>
+</div>
+<div fa-picker class="modal-body">
+	<div class="row">
+		<div class="col-lg-6">
+			<h5 ng-bind="'TA_FA_SIZE'|translate" ng-class="current.tittleType"></h5>
+			<div class="btn-group">
+				<button ng-repeat="size in sets.sizes" type="button" class="btn btn-default"
+				ng-model="icon.size"
+				btn-radio="size.value">
+					<span ng-bind="size.text|translate"></span>
+				</button>
+			</div>
+		</div>
+		<div class="col-lg-6">
+			<h5 ng-bind="'TA_FA_DIRECTION'|translate" ng-class="current.tittleType"></h5>
+			<div class="btn-group">
+				<button ng-repeat="dir in sets.directions" type="button" class="btn btn-default"
+				ng-model="current.direction"
+				btn-radio="dir.value"
+				tooltip="{{dir.tooltip|translate}}"
+				tooltip-animation="false">
+					<i ng-class="dir.pic" class="fa"> </i>
+				</button>
+			</div>
+		</div>
+		<div class="col-lg-6">
+			<h5 ng-bind="'TA_FA_COLOR'|translate" ng-class="current.tittleType"></h5>
+			<div class="btn-group">
+				<button ng-repeat="c in sets.colors" type="button" class="btn btn-default"
+				ng-model="current.color"
+				btn-radio="c">
+					<i ng-class="[current.name,c]" class="fa"></i>
+				</button>
+			</div>
+		</div>
+		<div class="col-lg-6">
+			<h5 ng-bind="'TA_FA_SPECIAL_ATTRS'|translate" ng-class="current.tittleType"></h5>
+			<div class="btn-group">
+				<button type="button" class="btn btn-default"
+				ng-model="icon.exchanged" btn-checkbox>
+					<span ng-bind="'TA_FA_XCHANGE'|translate"></span>
+				</button>
+				<button type="button" class="btn btn-default"
+				ng-model="current.spin" btn-checkbox btn-checkbox-true="'fa-spin'">
+					<span ng-bind="'TA_FA_SPIN'|translate"></span>
+				</button>
+				<button type="button" class="btn btn-default"
+				ng-model="current.border" btn-checkbox btn-checkbox-true="'fa-border'">
+					<span ng-bind="'TA_FA_BORDER'|translate"></span>
+				</button>
+			</div>
+		</div>
+		<div class="col-lg-12">
+			<h5 ng-bind="'TA_FA_PREVIEW'|translate" ng-class="current.tittleType"></h5>
+			<div class="well" style="text-align:center;padding:15px;">
+				<div class="btn-group">
+					<button class="btn" type="button"
+					ng-click="current=front"
+					ng-dblclick="add('front')"
+					ng-class="front.btnType">
+						<i name="front" class="fa"
+						ng-class="[icon.size, front.name, front.direction, front.spin, front.border, front.color]"
+						> </i>
+					</button>
+					<button ng-if="!icon.exchanged" type="button" class="btn btn-default"
+					ng-dblclick="add('stack')">
+						<span name="stack" class="fa-stack"
+						ng-class="icon.size"
+						> <i class="fa fa-stack-2x"
+							ng-class="[back.name, back.direction, back.spin, back.border, back.color]"
+							> </i> <i class="fa fa-stack-1x"
+							ng-class="[front.name, front.direction, front.spin, front.border, front.color]"
+							> </i> </span>
+					</button>
+					<button ng-if="icon.exchanged" type="button" class="btn btn-default"
+					ng-dblclick="add('stack')">
+						<span name="stack" class="fa-stack"
+						ng-class="icon.size"
+						> <i class="fa fa-stack-1x"
+							ng-class="[front.name, front.direction, front.spin, front.border, front.color]"
+							> </i><i class="fa fa-stack-2x"
+							ng-class="[back.name, back.direction, back.spin, back.border, back.color]"
+							> </i> </span>
+					</button>
+					<button type="button" class="btn"
+					ng-click="current=back"
+					ng-dblclick="add('back')"
+					ng-class="back.btnType">
+						<i name="back" class="fa"
+						ng-class="[icon.size, back.name, back.direction, back.spin, back.border, back.color]"
+						> </i>
+					</button>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<h5 ng-bind="'TA_FA_SELECT'|translate" ng-class="current.tittleType"></h5>
+		<ul class="fontawesome-icons">
+			<li ng-repeat="fa in fas"
+			ng-click="current.name=fa"
+			ng-dblclick="current.name=fa;add({true:'back',false:'front'}[current===back])">
+				<i ng-class="fa" class="fa"> </i>
+			</li>
+		</ul>
+	</div>
+</div>

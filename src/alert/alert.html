@@ -1,0 +1,76 @@
+<div class="modal-header">
+	<button ng-click="cancel()" type="button" class="close" data-dismiss="modal" aria-hidden="true">
+		&times;
+	</button>
+	<h4 class="modal-title" ng-bind="'TA_ALERT_INSERT'|translate"></h4>
+</div>
+<div alert-chooser class="modal-body">
+	<div class="row">
+		<div class="col-lg-6">
+			<h5 ng-bind="'TA_ALERT_TYPE'|translate"></h5>
+			<div class="btn-group">
+				<button ng-repeat="type in types" type="button" class="btn btn-default"
+				ng-model="alert.type"
+				btn-radio="type"
+				tooltip="{{type.text|translate}}"
+				tooltip-animation="false">
+					<i class="fa fa-lg" ng-class="type.icon"></i>
+				</button>
+			</div>
+		</div>
+		<div class="col-lg-6">
+			<h5 ng-bind="'TA_ALERT_SPECIAL_ATTRS'|translate"></h5>
+			<div class="btn-group btn-group-xs">
+				<button type="button" class="btn btn-default"
+				ng-model="alert.hideIcon"
+				btn-checkbox
+				tooltip="{{'TA_ALERT_HIDE_ICON'|translate}}"
+				tooltip-animation="false">
+					<span class="fa-stack fa-lg"> <i class="fa fa-flag fa-stack-1x"></i> <i class="fa fa-ban fa-stack-2x text-danger"></i> </span>
+				</button>
+				<button type="button" class="btn btn-default"
+				ng-model="alert.hideTitle"
+				btn-checkbox
+				tooltip="{{'TA_ALERT_HIDE_TITLE'|translate}}"
+				tooltip-animation="false">
+					<span class="fa-stack fa-lg"> <i class="fa fa-header fa-stack-1x"></i> <i class="fa fa-ban fa-stack-2x text-danger"></i> </span>
+				</button>
+				<button type="button" class="btn btn-default"
+				ng-model="alert.hideContent"
+				btn-checkbox
+				tooltip="{{'TA_ALERT_HIDE_CONTENT'|translate}}"
+				tooltip-animation="false">
+					<span class="fa-stack fa-lg"> <i class="fa fa-pencil fa-stack-1x fa-flip-horizontal"></i> <i class="fa fa-ban fa-stack-2x text-danger"></i> </span>
+				</button>
+			</div>
+		</div>
+		<div class="col-lg-12">
+			<div class="well">
+				<div name="alert" class="alert" ng-class="alert.type.name">
+					<i ng-if="!alert.hideIcon" class="fa fa-lg" ng-class="alert.type.icon"></i>
+					<strong ng-if="!alert.hideTitle" ng-bind="alert.title||((alert.type.text+'_TITLE')|translate)"></strong>
+					<span ng-if="!alert.hideContent" ng-bind="alert.content||((alert.type.text+'_CONTENT')|translate)"></span>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-12">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-header"></i></span>
+				<input type="text" class="form-control" ng-model="alert.title">
+			</div>
+			<br/>
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-pencil fa-flip-horizontal"></i></span>
+				<input type="text" class="form-control" ng-model="alert.content">
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal-footer">
+	<button type="button" class="btn btn-primary" ng-click="ok('alert')">
+		<span ng-bind="'TA_ALERT_OK'|translate"></span>
+	</button>
+	<button type="button" class="btn btn-primary" ng-click="cancel()">
+		<span ng-bind="'TA_ALERT_CANCEL'|translate"></span>
+	</button>
+</div>

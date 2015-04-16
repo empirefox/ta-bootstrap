@@ -1,7 +1,9 @@
 var gulp = require('gulp');
-var stylus = require('gulp-stylus');
 var nib = require('nib');
-var sourcemaps = require('gulp-sourcemaps');
+var plugins = require('gulp-load-plugins')();
+var stylus = plugins.stylus;
+var sourcemaps = plugins.sourcemaps;
+var concat = plugins.concat;
 var handleErrors = require('../util/handleErrors');
 var config = require('../config').stylus;
 var browserSync = require('browser-sync');
@@ -20,6 +22,8 @@ gulp.task('stylus', function() {
 	}))
 	// error
 	.on('error', handleErrors)
+    // concat
+    .pipe(concat(config.name))
 	// sourcemaps
 	.pipe(sourcemaps.init({
 		loadMaps : true
@@ -35,5 +39,4 @@ gulp.task('stylus', function() {
 	.pipe(browserSync.reload({
 		stream : true
 	}));
-	;
 });
