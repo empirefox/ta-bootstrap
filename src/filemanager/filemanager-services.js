@@ -142,11 +142,11 @@ function($http, qiniuCdn, $q) {
 						imgSrc : v.bigPicUrl,
 						url : v.outerGPlayerUrl,
 						click : function() {
-							var embed = '<img class="ta-insert-video" ta-insert-video="'
+							var embed = '<img class="ta-insert-video" ta-insert-video="' +
 							// real url
-							+ this.url + '" contenteditable="false" src="'
+							this.url + '" contenteditable="false" src="' +
 							// show in editor
-							+ this.imgSrc + '" allowfullscreen="true" width="300" frameborder="0" height="250"/>';
+							this.imgSrc + '" allowfullscreen="true" width="300" frameborder="0" height="250"/>';
 
 							return angular.element(embed);
 						}
@@ -166,11 +166,11 @@ function($http, qiniuCdn, $q) {
 						imgSrc : v.thumbnail,
 						url : 'http://player.youku.com/embed/' + v.id,
 						click : function() {
-							var embed = '<img class="ta-insert-video" ta-insert-video="'
+							var embed = '<img class="ta-insert-video" ta-insert-video="' +
 							// real url
-							+ this.url + '" contenteditable="false" src="'
+							this.url + '" contenteditable="false" src="' +
 							// show in editor
-							+ this.imgSrc + '" allowfullscreen="true" width="300" frameborder="0" height="250"/>';
+							this.imgSrc + '" allowfullscreen="true" width="300" frameborder="0" height="250"/>';
 
 							return angular.element(embed);
 						}

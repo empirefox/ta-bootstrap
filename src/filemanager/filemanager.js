@@ -40,14 +40,16 @@ function($scope, $modalInstance, videoTransform, fmOptions, data) {
 	$scope.insertUrl = function() {
 		switch($scope.ops.types[$scope.type].name) {
 			case 'video':
-				var embed = '<img class="ta-insert-video" ta-insert-video="'
+				var embed = '<img class="ta-insert-video" ta-insert-video="' +
 				// real url
-				+ $scope.webUrl
+				$scope.webUrl +
 				//
-				+ '" contenteditable="false" src="https://twemoji.maxcdn.com/svg/1f3a5.svg" allowfullscreen="true" width="300" frameborder="0" height="250"/>';
+				'" contenteditable="false" src="https://twemoji.maxcdn.com/svg/1f3a5.svg" allowfullscreen="true" width="300" frameborder="0" height="250"/>';
 				$modalInstance.close(angular.element(embed));
+				break;
 			case 'image':
 				$modalInstance.close(angular.element('<img>').attr('src', $scope.webUrl));
+                break;
 		}
 	};
 

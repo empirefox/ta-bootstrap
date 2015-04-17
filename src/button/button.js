@@ -34,8 +34,9 @@ function(taRegisterTool, $translate, $modal, buttonOptions, helper) {
 			html : ' | '
 		}),
 		activeState : function(commonElement) {
-			if (commonElement)
+			if (commonElement) {
 				return commonElement[0].tagName === 'A';
+			}
 			return false;
 		},
 		onElementSelect : {

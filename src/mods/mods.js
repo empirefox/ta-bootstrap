@@ -44,7 +44,7 @@ function(helper, taSelection, taTools, taRegisterTool, taTranslations, $translat
 		}
 	});
 
-	taTools['justifyLeft'] = {
+	taTools.justifyLeft = {
 		iconclass : 'fa fa-align-left',
 		tooltiptext : taTranslations.justifyLeft.tooltip,
 		action : function() {
@@ -55,7 +55,7 @@ function(helper, taSelection, taTools, taRegisterTool, taTranslations, $translat
 			return commonElement.hasClass('text-left');
 		}
 	};
-	taTools['justifyRight'] = {
+	taTools.justifyRight = {
 		iconclass : 'fa fa-align-right',
 		tooltiptext : taTranslations.justifyRight.tooltip,
 		action : function() {
@@ -66,7 +66,7 @@ function(helper, taSelection, taTools, taRegisterTool, taTranslations, $translat
 			return commonElement.hasClass('text-right') || this.$editor().queryCommandState('justifyRight');
 		}
 	};
-	taTools['justifyCenter'] = {
+	taTools.justifyCenter = {
 		iconclass : 'fa fa-align-center',
 		tooltiptext : taTranslations.justifyCenter.tooltip,
 		action : function() {

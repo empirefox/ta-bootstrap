@@ -62,7 +62,7 @@ function(taSelection) {
 					});
 					for (var i = nodes.length - 1; i >= 0; i--) {
 						range.insertNode(nodes[i]);
-					};
+					}
 
 					range = rangy.createRange();
 					range.selectNode(tempNode);

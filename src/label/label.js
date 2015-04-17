@@ -18,7 +18,7 @@ function($scope, $translate, $modalInstance, labelOptions, label) {
 	};
 }]).run(['taRegisterTool', '$translate', '$modal', 'helper',
 function(taRegisterTool, $translate, $modal, helper) {
-	var name = 'label'
+	var name = 'label';
 	taRegisterTool(name, {
 		iconclass : "fa fa-warning",
 		tooltiptext : $translate.instant('TA_ALERT_TOOLTIP'),

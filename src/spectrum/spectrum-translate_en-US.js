@@ -5,4 +5,4 @@ function($translateProvider) {
 	$translateProvider.translations('en-US', {
 		TA_SPECTRUM_TOOLTIP : 'Change font color'
 	});
-}])
+}]);

@@ -6,4 +6,4 @@ function($translateProvider) {
 		TA_JUSTIFY_TOOLTIP : 'Align text full',
 		TA_QUOTE_REVERSE_TOOLTIP : 'Toggle quote direction'
 	});
-}])
+}]);

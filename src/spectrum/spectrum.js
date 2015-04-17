@@ -1,8 +1,9 @@
 'use strict';
 
+// should not use it!!!
 // warning: need modify ng-sanitize module
-angular.module('ta.bootstrap.spectrum', ['textAngular', 'pascalprecht.translate']).run(['$q', 'taRegisterTool', '$translate', 'spectrumOptions',
-function($q, taRegisterTool, $translate, spectrumOptions) {
+angular.module('ta.bootstrap.spectrum', ['textAngular', 'pascalprecht.translate']).run(['$q', 'taRegisterTool', '$translate',
+function($q, taRegisterTool, $translate) {
 
 	taRegisterTool('spectrum', {
 		display : '<button spectrum-picker type="button"><i class="fa fa-stop" ng-style="{color:foreColor}"></i></button>',
