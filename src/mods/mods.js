@@ -98,15 +98,4 @@ function(helper, taSelection, taTools, taRegisterTool, taTranslations, $translat
 			return this.$editor().queryFormatBlockState('blockquote');
 		}
 	});
-
-    taRegisterTool('strike', {
-        iconclass: 'fa fa-strikethrough',
-        tooltiptext: taTranslations.underline.tooltip,
-        action: function(){
-            return this.$editor().wrapSelection("strikeThrough", null);
-        },
-        activeState: function(){
-            return this.$editor().queryCommandState('strikeThrough');
-        }
-    });
 }]);
